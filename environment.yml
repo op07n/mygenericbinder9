@@ -2,11 +2,12 @@ name: mygenericbinder9
 channels:
   - defaults
   - conda-forge
+  - pytorch
 dependencies:
   - ipykernel
   - python=3.7
+  - scipy
   - pytorch==1.4.0
-  - torchvision==0.5.0
   - cudatoolkit==10.1.243
   - pip
   - pip:
@@ -15,6 +16,7 @@ dependencies:
     - jupyter-server-proxy
     - nbserverproxy  
     - nbgitpuller
+    - torchvision==0.5.0
     - opencv-python==4.2.0.32
     - vispy==0.6.4
     - moviepy==1.0.2
